@@ -190,7 +190,9 @@ export const listTopProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_TOP_REQUEST })
 
-    const { data } = await axios.get(`/api/products/top`)
+    const { data } = await axios.get(
+      `https://proshop-backend-ihag.onrender.com/api/products/top`
+    )
 
     dispatch({ type: PRODUCT_TOP_SUCCESS, payload: data })
   } catch (error) {
