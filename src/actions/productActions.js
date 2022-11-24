@@ -21,7 +21,7 @@ import {
   PRODUCT_TOP_FAIL,
 } from '../constants/productConstants'
 
-const productionUrl = process.env.PRODUCTION_URL
+const productionUrl = 'https://proshop-backend-ihag.onrender.com'
 
 export const listProducts =
   (keyword = '', pageNumber = '') =>
