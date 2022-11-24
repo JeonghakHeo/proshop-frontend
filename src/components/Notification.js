@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Row, Col, Toast, ToastContainer } from 'react-bootstrap'
 const Notification = ({ show, color, message }) => {
   const [showNotification, setNotification] = useState(false)
-
+  showNotification = null
   return (
     <Row>
       <Col xs={6}>
